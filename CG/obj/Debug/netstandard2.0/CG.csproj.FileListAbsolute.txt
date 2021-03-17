@@ -1,0 +1,15 @@
+C:\Users\volos\source\repos\CG\CG\bin\Debug\netstandard2.0\CG.deps.json
+C:\Users\volos\source\repos\CG\CG\bin\Debug\netstandard2.0\CG.dll
+C:\Users\volos\source\repos\CG\CG\bin\Debug\netstandard2.0\ref\CG.dll
+C:\Users\volos\source\repos\CG\CG\bin\Debug\netstandard2.0\CG.pdb
+C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\CG.csprojAssemblyReference.cache
+C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\CG.AssemblyInfoInputs.cache
+C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\CG.AssemblyInfo.cs
+C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\CG.csproj.CoreCompileInputs.cache
+C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\CG.dll
+C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\ref\CG.dll
+C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\CG.pdb
+C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\RegistrPage.xaml.g.cs
