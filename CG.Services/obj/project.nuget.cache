@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "GedrceWG+7X+7/ikdTVijnbZ+RgyD+NLd3e9m/G9zfSdtX3VgQQXLkwHd9bOErtSAZ65upZKLemQqnedKJqsxw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\volos\\source\\repos\\CG\\CG.Services\\CG.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

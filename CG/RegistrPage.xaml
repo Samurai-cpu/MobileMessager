@@ -2,19 +2,42 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CG.RegistrPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="0">
+        <Frame BackgroundColor="#37b0ed" CornerRadius="0">
             <Label Text="Registration" HorizontalTextAlignment="Center" 
                    TextColor="White" FontSize="36"/>
         </Frame>
-        <Entry Placeholder="Email" />
-        <Entry Placeholder="Login" />
-        <Entry Placeholder="PhoneNumber" Keyboard="Telephone"/>
-        <Button Text="Back" Margin="20" 
-                Padding="10" BackgroundColor="#2196F3"
-                TextColor="White"
-                CornerRadius="20"
-                Clicked="BackBtnClick"
-                />
+        <FlexLayout Padding="10,100,10,0" Direction="Column" Margin="5" JustifyContent="SpaceBetween">
+            <Frame Margin="5" Padding="-5"
+                   BorderColor="LightGray" CornerRadius="15">
+                <Entry x:Name="EmailEntry" Completed="EmailEntry_Completed"
+                    Placeholder="Email" Keyboard="Email" Margin="10"/>
+            </Frame>
+            <Label x:Name="EmailLabel" Margin="15,0,0,0"/>
+            <Frame Margin="5" Padding="-5"
+                   BorderColor="LightGray" CornerRadius="15">
+                <Entry x:Name="LoginEntry" 
+                    Completed="LoginEntry_Completed"
+                    Placeholder="Login" Margin="10"/>
+            </Frame>
+            <Label x:Name="LoginLabel" Margin="15,0,0,0"/>
+            <Frame Margin="5" Padding="-5"
+                   BorderColor="LightGray" CornerRadius="15">
+                <Entry x:Name="PhoneEntry" Completed="PhoneEntry_Completed"
+                      Placeholder="PhoneNumber" Keyboard="Telephone" Margin="10"/>
+            </Frame>
+            <Label x:Name="PhoneLabel" Margin="15,0,0,0"/>
+            <Button Text="Back" Margin="20,90,20,0" 
+                    Padding="10" BackgroundColor="#37b0ed"
+                    TextColor="White"
+                    CornerRadius="20"
+                    Clicked="BackBtnClick"
+                    />
+        </FlexLayout>
     </StackLayout>
 </ContentPage>

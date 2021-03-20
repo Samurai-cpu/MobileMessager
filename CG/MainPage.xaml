@@ -1,32 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+    
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CG.MainPage">
-
+             x:Class="CG.MainPage"
+             >
+             
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+        <Frame BackgroundColor="#37b0ed" Padding="24" CornerRadius="0">
             <Label Text="Welcome Page" HorizontalTextAlignment="Center" 
                    TextColor="White" FontSize="36"/>
         </Frame>
-        <Label Text="Start messaging" TextColor="Black"
+              <Label Text="Start messaging" TextColor="#2196F3"
                HorizontalTextAlignment="Center"
                FontSize="Title" Padding="30,10,30,10"/>
-        <Entry Placeholder="PhoneNumber" Keyboard="Telephone"/>
-        <Button Text="Log In" Margin="20" 
-                Padding="10" BackgroundColor="#2196F3"
+        
+                <FlexLayout Direction="Column" VerticalOptions="Center" HorizontalOptions="Center" Padding="0,50,0,0">
+            <Frame Margin="5" Padding="-5"
+                   BorderColor="LightGray" CornerRadius="15">
+                <Entry x:Name="PhoneEntry"
+               Placeholder="PhoneNumber" 
+               Keyboard="Telephone" Margin="20,10,20,5"
+                       
+                 />
+            </Frame>
+            <Label x:Name="ErrorLabel" Margin="25,0,0,0"
+                   />
+                 <Button Text="Log In" Margin="20,8,20,8" 
+                Padding="5" BackgroundColor="#37b0ed"
                 TextColor="White"
                 CornerRadius="20"
-                Clicked="Button_Clicked"
+                Clicked="PhoneValidate"
                 />
-        <Label Text="Have no account? " Margin="10" 
-               TextColor="Black" FontSize="18"
+                <Label Text="Have no account? " Margin="5" 
+               TextColor="#0099ff" FontSize="22"
                HorizontalTextAlignment="Center"
+               FontAttributes="Bold"
+               FontFamily="Agency FB"
                />
-        <Button Text="Create New Account" Margin="20"
-                Padding="10" BackgroundColor="#42b72a"
+                <Button Text="Create New Account" Margin="20,8,20,8"
+                Padding="5" BackgroundColor="#37b0ed"
                 TextColor="White"
                 CornerRadius="20"
                 Clicked="RegistrBtnClick"/>
+        </FlexLayout>
     </StackLayout>
 
 </ContentPage>
