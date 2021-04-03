@@ -16,6 +16,7 @@ namespace CG
         public TestPage1()
         {
             InitializeComponent();
+            usersList.HasUnevenRows = true;
         }
         protected override void OnAppearing()
         {

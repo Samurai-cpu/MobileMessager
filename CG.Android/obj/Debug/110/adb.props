@@ -1,2 +1,2 @@
-AdbTarget=-s R9DN702AKDJ
+AdbTarget=-s emulator-5554
 AdbOptions=

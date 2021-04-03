@@ -3,6 +3,7 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "CG.Android.dll" comes first in this list. */
 		"CG.Android.dll",
+		"CG.Dal.dll",
 		"CG.dll",
 		"FormsViewGroup.dll",
 		"SQLite-net.dll",

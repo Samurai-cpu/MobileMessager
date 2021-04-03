@@ -204,6 +204,19 @@
           "buildTransitive/Xamarin.Forms.props": {},
           "buildTransitive/Xamarin.Forms.targets": {}
         }
+      },
+      "CG.Dal/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "sqlite-net-pcl": "1.7.335"
+        },
+        "compile": {
+          "bin/placeholder/CG.Dal.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CG.Dal.dll": {}
+        }
       }
     }
   },
@@ -822,10 +835,16 @@
         "xamarin.forms.5.0.0.2012.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "CG.Dal/1.0.0": {
+      "type": "project",
+      "path": "../CG.Dal/CG.Dal.csproj",
+      "msbuildProject": "../CG.Dal/CG.Dal.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "CG.Dal >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012",
@@ -865,7 +884,11 @@
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\volos\\source\\repos\\CG\\CG.Dal\\CG.Dal.csproj": {
+              "projectPath": "C:\\Users\\volos\\source\\repos\\CG\\CG.Dal\\CG.Dal.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -237,6 +237,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "CG.Dal": "1.0.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
           "sqlite-net-pcl": "1.7.335"
@@ -246,6 +247,19 @@
         },
         "runtime": {
           "bin/placeholder/CG.dll": {}
+        }
+      },
+      "CG.Dal/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "sqlite-net-pcl": "1.7.335"
+        },
+        "compile": {
+          "bin/placeholder/CG.Dal.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CG.Dal.dll": {}
         }
       }
     },
@@ -485,6 +499,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "CG.Dal": "1.0.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
           "sqlite-net-pcl": "1.7.335"
@@ -494,6 +509,19 @@
         },
         "runtime": {
           "bin/placeholder/CG.dll": {}
+        }
+      },
+      "CG.Dal/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "sqlite-net-pcl": "1.7.335"
+        },
+        "compile": {
+          "bin/placeholder/CG.Dal.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CG.Dal.dll": {}
         }
       }
     },
@@ -733,6 +761,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "CG.Dal": "1.0.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
           "sqlite-net-pcl": "1.7.335"
@@ -742,6 +771,19 @@
         },
         "runtime": {
           "bin/placeholder/CG.dll": {}
+        }
+      },
+      "CG.Dal/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "sqlite-net-pcl": "1.7.335"
+        },
+        "compile": {
+          "bin/placeholder/CG.Dal.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CG.Dal.dll": {}
         }
       }
     },
@@ -981,6 +1023,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "CG.Dal": "1.0.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
           "sqlite-net-pcl": "1.7.335"
@@ -990,6 +1033,19 @@
         },
         "runtime": {
           "bin/placeholder/CG.dll": {}
+        }
+      },
+      "CG.Dal/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "sqlite-net-pcl": "1.7.335"
+        },
+        "compile": {
+          "bin/placeholder/CG.Dal.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CG.Dal.dll": {}
         }
       }
     }
@@ -1440,6 +1496,11 @@
       "type": "project",
       "path": "../CG/CG.csproj",
       "msbuildProject": "../CG/CG.csproj"
+    },
+    "CG.Dal/1.0.0": {
+      "type": "project",
+      "path": "../CG.Dal/CG.Dal.csproj",
+      "msbuildProject": "../CG.Dal/CG.Dal.csproj"
     }
   },
   "projectFileDependencyGroups": {

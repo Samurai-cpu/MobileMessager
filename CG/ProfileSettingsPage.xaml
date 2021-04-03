@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CG.ProfileSettingsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#37b0ed" CornerRadius="0">
+                <Label Text="Profile" HorizontalTextAlignment="Center" 
+                   TextColor="White" FontSize="36"/>
+            </Frame>
+            <Frame
+                MinimumHeightRequest="180"
+               CornerRadius="30"
+               WidthRequest="100"
+               HorizontalOptions="Center"
+               Padding="0"
+               Margin="0,30,0,30"
+              IsClippedToBounds="True">
+                <Image Source="no_image.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+            </Frame>
+            <ListView x:Name="usersList" ItemsSource="{Binding}"  RowHeight="50" >
+                <ListView.Header>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Account info"
+                             TextColor="#37b0ed"
+                             Margin="5,5,5,5"/>
+                    </StackLayout>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout>
+                                        <Label Text="{Binding Title}"  TextColor="Black" Margin="10,0,0,0" Padding="0"/>
+                                        <Label Text="{Binding Content}"  Margin="10,0,0,0" Padding="0"/>
+                                    </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

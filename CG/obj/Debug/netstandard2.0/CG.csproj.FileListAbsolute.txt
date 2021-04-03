@@ -15,3 +15,7 @@ C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\CG.pdb
 C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\RegistrPage.xaml.g.cs
 C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\TestPage1.xaml.g.cs
 C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\TestPage2.xaml.g.cs
+C:\Users\volos\source\repos\CG\CG\bin\Debug\netstandard2.0\CG.Dal.dll
+C:\Users\volos\source\repos\CG\CG\bin\Debug\netstandard2.0\CG.Dal.pdb
+C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\CG.csproj.CopyComplete
+C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\ProfileSettingsPage.xaml.g.cs

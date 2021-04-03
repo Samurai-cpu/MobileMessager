@@ -87,7 +87,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\pendos.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CG\CG.csproj">
       <Project>{31D9AC7D-5EF2-4186-B8CE-1D075B549B11}</Project>
@@ -98,6 +100,9 @@
     <AndroidResource Include="Resources\drawable\new_back_image.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\no_image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

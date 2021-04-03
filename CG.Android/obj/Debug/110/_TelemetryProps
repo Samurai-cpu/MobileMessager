@@ -23,6 +23,6 @@ AndroidDexTool=d8
 AndroidLinkTool=
 AndroidEnableProfiledAot=false
 AndroidInstallAfterBuild=True
-AndroidSessionId=06bda877-90e9-444e-81c7-ea41b74be50a
+AndroidSessionId=a86b9ca2-8d22-44a0-a917-5d56e8ff4da5
 BuildConfiguration=Debug
 TemplateName={c9e5eea5-ca05-42a1-839b-61506e0a37df}

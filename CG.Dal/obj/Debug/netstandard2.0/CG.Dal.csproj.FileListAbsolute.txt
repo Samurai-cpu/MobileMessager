@@ -1,0 +1,9 @@
+C:\Users\volos\source\repos\CG\CG.Dal\bin\Debug\netstandard2.0\CG.Dal.deps.json
+C:\Users\volos\source\repos\CG\CG.Dal\bin\Debug\netstandard2.0\CG.Dal.dll
+C:\Users\volos\source\repos\CG\CG.Dal\bin\Debug\netstandard2.0\CG.Dal.pdb
+C:\Users\volos\source\repos\CG\CG.Dal\obj\Debug\netstandard2.0\CG.Dal.csprojAssemblyReference.cache
+C:\Users\volos\source\repos\CG\CG.Dal\obj\Debug\netstandard2.0\CG.Dal.AssemblyInfoInputs.cache
+C:\Users\volos\source\repos\CG\CG.Dal\obj\Debug\netstandard2.0\CG.Dal.AssemblyInfo.cs
+C:\Users\volos\source\repos\CG\CG.Dal\obj\Debug\netstandard2.0\CG.Dal.csproj.CoreCompileInputs.cache
+C:\Users\volos\source\repos\CG\CG.Dal\obj\Debug\netstandard2.0\CG.Dal.dll
+C:\Users\volos\source\repos\CG\CG.Dal\obj\Debug\netstandard2.0\CG.Dal.pdb
