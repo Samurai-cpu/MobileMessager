@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="CG.Views.ChatCells.OutgoingViewCell"
+            >
+    <Frame BackgroundColor="#37b0ed"
+            Padding="10"
+            HasShadow="true"
+            Margin="80,10,10,10"
+           CornerRadius="10"
+           HorizontalOptions="EndAndExpand"
+           >
+        <StackLayout Orientation="Horizontal">
+            <Label Text="{Binding Text}"
+               TextColor="White"/>
+            <Label Text="{Binding Time, StringFormat='{}{0:HH:mm}'}"
+                   FontSize="Micro"
+                   Padding="0"
+                   Margin="0"
+                   VerticalOptions="End"
+                   />
+            <Image VerticalOptions="End"
+                   Source="{Binding ImagePath}"
+                   WidthRequest="15"
+                   HeightRequest="15"
+                   x:Name="Status_Image"/>
+        </StackLayout>
+    </Frame>
+</ViewCell>

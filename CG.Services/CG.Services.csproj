@@ -1,7 +1,30 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="config.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="config.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CG.Models\CG.Models.csproj" />
+    <ProjectReference Include="..\CG.Providers\CG.Providers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v11.0\Mono.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
 </Project>

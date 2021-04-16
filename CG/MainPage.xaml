@@ -23,9 +23,9 @@
                        
                  />
             </Frame>
-            <Label x:Name="ErrorLabel" Margin="25,0,0,0"
-                   />
-                 <Button Text="Log In" Margin="20,8,20,8" 
+            <Label x:Name="ErrorLabel" Margin="25,0,0,0"/>
+            <Label x:Name="TestLabel" Margin="25,0,0,0"/>
+            <Button Text="Log In" Margin="20,8,20,8" 
                 Padding="5" BackgroundColor="#37b0ed"
                 TextColor="White"
                 CornerRadius="20"

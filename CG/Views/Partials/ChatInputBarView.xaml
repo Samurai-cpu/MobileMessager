@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:CG.ViewModels" 
+             x:DataType="viewmodels:ChatPageViewModel"
+             x:Class="CG.Views.Partials.ChatInputBarView" >
+    <Grid RowSpacing="0" 
+           ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Entry x:Name="chatTextInput" 
+                 Text="{Binding TextToSend}" 
+                 Margin="1"  
+                 TextColor="Black" 
+                 Keyboard="Chat"  
+                 HorizontalOptions="FillAndExpand" 
+                 PlaceholderColor="LightGray"
+                 Placeholder="Type your message here"
+                 Grid.Row="0" 
+                 Grid.Column="0"
+                 Completed="Handle_Completed"/>
+        <ImageButton Source="sendIcon.png"
+               Grid.Row="0"
+               Grid.Column="1"
+                WidthRequest="30"
+                HeightRequest="30"
+                     Clicked="Handle_Completed"
+                     BackgroundColor="LightGray"
+            >
+        </ImageButton>
+        <ImageButton Source="sendIcon.png"
+               Grid.Row="0"
+               Grid.Column="2"
+                WidthRequest="30"
+                HeightRequest="30"
+                     Clicked="IncomingMsg"
+                     BackgroundColor="red"
+            >
+        </ImageButton>
+    </Grid>
+</ContentView>

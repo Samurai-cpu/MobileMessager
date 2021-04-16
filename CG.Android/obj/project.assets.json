@@ -2,6 +2,48 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v11.0": {
+      "Autofac/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "4.7.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Autofac.dll": {}
+        }
+      },
+      "Fody/6.4.0": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PropertyChanged.Fody/3.3.3": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "6.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/PropertyChanged.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/PropertyChanged.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
       "sqlite-net-pcl/1.7.335": {
         "type": "package",
         "dependencies": {
@@ -71,6 +113,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/4.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
         }
       },
       "System.Memory/4.5.3": {
@@ -1068,7 +1119,11 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Autofac": "6.1.0",
           "CG.Dal": "1.0.0",
+          "CG.Services": "1.0.0",
+          "Newtonsoft.Json": "12.0.3",
+          "PropertyChanged.Fody": "3.3.3",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
           "sqlite-net-pcl": "1.7.335"
@@ -1092,10 +1147,159 @@
         "runtime": {
           "bin/placeholder/CG.Dal.dll": {}
         }
+      },
+      "CG.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "bin/placeholder/CG.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CG.Models.dll": {}
+        }
+      },
+      "CG.Providers/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "CG.Dal": "1.0.0",
+          "sqlite-net-pcl": "1.7.335"
+        },
+        "compile": {
+          "bin/placeholder/CG.Providers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CG.Providers.dll": {}
+        }
+      },
+      "CG.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "CG.Models": "1.0.0",
+          "CG.Providers": "1.0.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "bin/placeholder/CG.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CG.Services.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Autofac/6.1.0": {
+      "sha512": "22aXncFDye08TsXHobcxAoZFBeaJ9nrAxGzk9YHLLaIkYO7aeAA0Sz7Mii9qsfB76S1gdhebqMv8QsnknJMT/w==",
+      "type": "package",
+      "path": "autofac/6.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.6.1.0.nupkg.sha512",
+        "autofac.nuspec",
+        "icon.png",
+        "lib/net5.0/Autofac.dll",
+        "lib/net5.0/Autofac.pdb",
+        "lib/net5.0/Autofac.xml",
+        "lib/netstandard2.0/Autofac.dll",
+        "lib/netstandard2.0/Autofac.pdb",
+        "lib/netstandard2.0/Autofac.xml",
+        "lib/netstandard2.1/Autofac.dll",
+        "lib/netstandard2.1/Autofac.pdb",
+        "lib/netstandard2.1/Autofac.xml"
+      ]
+    },
+    "Fody/6.4.0": {
+      "sha512": "5cgK5htSklGmBTR8Bj/xvTGrxTINj18QY9S1rAu1G5QX9NAzK9lAB0TugUPdeSGmktW82R3gMj2NNnTgicMwsg==",
+      "type": "package",
+      "path": "fody/6.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "build/Fody.targets",
+        "fody.6.4.0.nupkg.sha512",
+        "fody.nuspec",
+        "netclassictask/Fody.dll",
+        "netclassictask/FodyCommon.dll",
+        "netclassictask/FodyHelpers.dll",
+        "netclassictask/FodyIsolated.dll",
+        "netclassictask/Mono.Cecil.Pdb.dll",
+        "netclassictask/Mono.Cecil.Pdb.pdb",
+        "netclassictask/Mono.Cecil.Rocks.dll",
+        "netclassictask/Mono.Cecil.Rocks.pdb",
+        "netclassictask/Mono.Cecil.dll",
+        "netclassictask/Mono.Cecil.pdb",
+        "netstandardtask/Fody.dll",
+        "netstandardtask/FodyCommon.dll",
+        "netstandardtask/FodyHelpers.dll",
+        "netstandardtask/FodyIsolated.dll",
+        "netstandardtask/Mono.Cecil.Pdb.dll",
+        "netstandardtask/Mono.Cecil.Pdb.pdb",
+        "netstandardtask/Mono.Cecil.Rocks.dll",
+        "netstandardtask/Mono.Cecil.Rocks.pdb",
+        "netstandardtask/Mono.Cecil.dll",
+        "netstandardtask/Mono.Cecil.pdb"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "PropertyChanged.Fody/3.3.3": {
+      "sha512": "2dHoq3+Y37J2g06RRyV57zMY9uVOq9JanPienXxineL1pIACCgxn8dL/f6C9I0L1hPvhoipxtP2u9jcSlVsn6Q==",
+      "type": "package",
+      "path": "propertychanged.fody/3.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/PropertyChanged.Fody.props",
+        "lib/net40/PropertyChanged.dll",
+        "lib/net40/PropertyChanged.xml",
+        "lib/netstandard1.0/PropertyChanged.dll",
+        "lib/netstandard1.0/PropertyChanged.xml",
+        "lib/netstandard2.0/PropertyChanged.dll",
+        "lib/netstandard2.0/PropertyChanged.xml",
+        "lib/netstandard2.1/PropertyChanged.dll",
+        "lib/netstandard2.1/PropertyChanged.xml",
+        "propertychanged.fody.3.3.3.nupkg.sha512",
+        "propertychanged.fody.nuspec",
+        "weaver/PropertyChanged.Fody.dll",
+        "weaver/PropertyChanged.Fody.xcf"
+      ]
+    },
     "sqlite-net-pcl/1.7.335": {
       "sha512": "0A9YNPbp66aB+Sitxmh9lq1KDtD4+EBPfdtnYN8WenvQqh5dNgMxUV7kaEG6EXYTi4zBxcsDKpyYJzbViWJXtw==",
       "type": "package",
@@ -1186,6 +1390,32 @@
         "ref/netstandard2.0/System.Buffers.xml",
         "system.buffers.4.4.0.nupkg.sha512",
         "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Diagnostics.DiagnosticSource/4.7.1": {
+      "sha512": "j81Lovt90PDAq8kLpaJfJKV/rWdWuEk6jfV+MBkee33vzYLEUsy4gXK8laa9V2nZlLM9VM9yA/OOQxxPEJKAMw==",
+      "type": "package",
+      "path": "system.diagnostics.diagnosticsource/4.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net45/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net46/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net46/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.xml",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.dll",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.xml",
+        "system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -2385,6 +2615,21 @@
       "type": "project",
       "path": "../CG.Dal/CG.Dal.csproj",
       "msbuildProject": "../CG.Dal/CG.Dal.csproj"
+    },
+    "CG.Models/1.0.0": {
+      "type": "project",
+      "path": "../CG.Models/CG.Models.csproj",
+      "msbuildProject": "../CG.Models/CG.Models.csproj"
+    },
+    "CG.Providers/1.0.0": {
+      "type": "project",
+      "path": "../CG.Providers/CG.Providers.csproj",
+      "msbuildProject": "../CG.Providers/CG.Providers.csproj"
+    },
+    "CG.Services/1.0.0": {
+      "type": "project",
+      "path": "../CG.Services/CG.Services.csproj",
+      "msbuildProject": "../CG.Services/CG.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {

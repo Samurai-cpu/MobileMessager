@@ -91,6 +91,10 @@
     <AndroidResource Include="Resources\drawable\pendos.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CG.Services\CG.Services.csproj">
+      <Project>{F5E85D58-2CA3-4FFB-8855-D8D3EB9DD0A7}</Project>
+      <Name>CG.Services</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CG\CG.csproj">
       <Project>{31D9AC7D-5EF2-4186-B8CE-1D075B549B11}</Project>
       <Name>CG</Name>
@@ -103,6 +107,18 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\no_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\sendIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Read.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\MFailure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Unread.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

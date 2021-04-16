@@ -9,20 +9,68 @@
     ".NETStandard,Version=v2.0/": {
       "CG/1.0.0": {
         "dependencies": {
+          "Autofac": "6.1.0",
           "CG.Dal": "1.0.0",
+          "CG.Services": "1.0.0",
           "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "12.0.3",
+          "PropertyChanged.Fody": "3.3.3",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
-          "sqlite-net-pcl": "1.7.335"
+          "sqlite-net-pcl": "1.7.335",
+          "Mono.Android": "0.0.0.0"
         },
         "runtime": {
           "CG.dll": {}
+        }
+      },
+      "Autofac/6.1.0": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
+          "System.Diagnostics.DiagnosticSource": "4.7.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Autofac.dll": {
+            "assemblyVersion": "6.1.0.0",
+            "fileVersion": "6.1.0.0"
+          }
+        }
+      },
+      "Fody/6.4.0": {},
+      "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "4.700.19.56404"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "PropertyChanged.Fody/3.3.3": {
+        "dependencies": {
+          "Fody": "6.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/PropertyChanged.dll": {
+            "assemblyVersion": "3.3.3.0",
+            "fileVersion": "3.3.3.0"
+          }
         }
       },
       "sqlite-net-pcl/1.7.335": {
@@ -51,7 +99,7 @@
       },
       "SQLitePCLRaw.core/2.0.3": {
         "dependencies": {
-          "System.Memory": "4.5.3"
+          "System.Memory": "4.5.4"
         },
         "runtime": {
           "lib/netstandard2.0/SQLitePCLRaw.core.dll": {
@@ -72,24 +120,35 @@
           }
         }
       },
-      "System.Buffers/4.4.0": {
+      "System.Buffers/4.5.1": {
         "runtime": {
           "lib/netstandard2.0/System.Buffers.dll": {
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.25519.3"
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.28619.1"
           }
         }
       },
-      "System.Memory/4.5.3": {
+      "System.Diagnostics.DiagnosticSource/4.7.1": {
         "dependencies": {
-          "System.Buffers": "4.4.0",
+          "System.Memory": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.20.21406"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {
+        "dependencies": {
+          "System.Buffers": "4.5.1",
           "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {
             "assemblyVersion": "4.0.1.1",
-            "fileVersion": "4.6.27617.2"
+            "fileVersion": "4.6.28619.1"
           }
         }
       },
@@ -101,11 +160,22 @@
           }
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "assemblyVersion": "4.0.4.1",
-            "fileVersion": "4.6.26919.2"
+            "fileVersion": "4.6.28619.1"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.6.27129.4"
           }
         }
       },
@@ -143,6 +213,32 @@
         "runtime": {
           "CG.Dal.dll": {}
         }
+      },
+      "CG.Providers/1.0.0": {
+        "dependencies": {
+          "CG.Dal": "1.0.0",
+          "sqlite-net-pcl": "1.7.335"
+        },
+        "runtime": {
+          "CG.Providers.dll": {}
+        }
+      },
+      "CG.Services/1.0.0": {
+        "dependencies": {
+          "CG.Providers": "1.0.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "CG.Services.dll": {}
+        }
+      },
+      "Mono.Android/0.0.0.0": {
+        "runtime": {
+          "Mono.Android.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
       }
     }
   },
@@ -151,6 +247,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Autofac/6.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-22aXncFDye08TsXHobcxAoZFBeaJ9nrAxGzk9YHLLaIkYO7aeAA0Sz7Mii9qsfB76S1gdhebqMv8QsnknJMT/w==",
+      "path": "autofac/6.1.0",
+      "hashPath": "autofac.6.1.0.nupkg.sha512"
+    },
+    "Fody/6.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5cgK5htSklGmBTR8Bj/xvTGrxTINj18QY9S1rAu1G5QX9NAzK9lAB0TugUPdeSGmktW82R3gMj2NNnTgicMwsg==",
+      "path": "fody/6.4.0",
+      "hashPath": "fody.6.4.0.nupkg.sha512"
+    },
+    "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1Am6l4Vpn3/K32daEqZI+FFr96OlZkgwK2LcT3pZ2zWubR5zTPW3/FkO1Rat9kb7oQOa4rxgl9LJHc5tspCWfg==",
+      "path": "microsoft.bcl.asyncinterfaces/1.1.0",
+      "hashPath": "microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -165,6 +282,20 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "PropertyChanged.Fody/3.3.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2dHoq3+Y37J2g06RRyV57zMY9uVOq9JanPienXxineL1pIACCgxn8dL/f6C9I0L1hPvhoipxtP2u9jcSlVsn6Q==",
+      "path": "propertychanged.fody/3.3.3",
+      "hashPath": "propertychanged.fody.3.3.3.nupkg.sha512"
     },
     "sqlite-net-pcl/1.7.335": {
       "type": "package",
@@ -201,19 +332,26 @@
       "path": "sqlitepclraw.provider.e_sqlite3/2.0.3",
       "hashPath": "sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512"
     },
-    "System.Buffers/4.4.0": {
+    "System.Buffers/4.5.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Ii2bedd4HVzddupdU35n3ygohUPlNn7MDimBOYcwWNce2NizQ1fCSaQJY1Tzv80aMqOGpVcU4wZr/Xe50xcTwg==",
-      "path": "system.buffers/4.4.0",
-      "hashPath": "system.buffers.4.4.0.nupkg.sha512"
+      "sha512": "sha512-Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "path": "system.buffers/4.5.1",
+      "hashPath": "system.buffers.4.5.1.nupkg.sha512"
     },
-    "System.Memory/4.5.3": {
+    "System.Diagnostics.DiagnosticSource/4.7.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
-      "path": "system.memory/4.5.3",
-      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+      "sha512": "sha512-j81Lovt90PDAq8kLpaJfJKV/rWdWuEk6jfV+MBkee33vzYLEUsy4gXK8laa9V2nZlLM9VM9yA/OOQxxPEJKAMw==",
+      "path": "system.diagnostics.diagnosticsource/4.7.1",
+      "hashPath": "system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
     },
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",
@@ -222,12 +360,19 @@
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
-      "path": "system.runtime.compilerservices.unsafe/4.5.2",
-      "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+      "sha512": "sha512-3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.3",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BG/TNxDFv0svAzx8OiMXDlsHfGw623BZ8tCXw4YLhDFDvDhNUEV58jKYMGRnkbJNm7c3JNNJDiN7JBMzxRBR2w==",
+      "path": "system.threading.tasks.extensions/4.5.2",
+      "hashPath": "system.threading.tasks.extensions.4.5.2.nupkg.sha512"
     },
     "Xamarin.Essentials/1.6.1": {
       "type": "package",
@@ -245,6 +390,21 @@
     },
     "CG.Dal/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CG.Providers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CG.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mono.Android/0.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CG.PhoneConfirmPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#37b0ed" CornerRadius="0">
+                <Label Text="Registration" HorizontalTextAlignment="Center" 
+                   TextColor="White" FontSize="30"/>
+            </Frame>
+            <FlexLayout Padding="10,40,10,0" Direction="Column" Margin="5" JustifyContent="SpaceBetween">
+                <Frame Margin="5" Padding="-5"
+                   BorderColor="LightGray" CornerRadius="15">
+                    <Entry x:Name="SMSEntry" Unfocused="SMSEntry_Unfocused"
+                    Placeholder="SMS Code" Keyboard="Numeric" Margin="10"/>
+                </Frame>
+            </FlexLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -10,29 +10,44 @@
     <StackLayout>
         <Frame BackgroundColor="#37b0ed" CornerRadius="0">
             <Label Text="Registration" HorizontalTextAlignment="Center" 
-                   TextColor="White" FontSize="36"/>
+                   TextColor="White" FontSize="30"/>
         </Frame>
-        <FlexLayout Padding="10,100,10,0" Direction="Column" Margin="5" JustifyContent="SpaceBetween">
+        <FlexLayout Padding="10,40,10,0" Direction="Column" Margin="5" JustifyContent="SpaceBetween">
             <Frame Margin="5" Padding="-5"
                    BorderColor="LightGray" CornerRadius="15">
-                <Entry x:Name="EmailEntry" Completed="EmailEntry_Completed"
+                <Entry x:Name="EmailEntry" Unfocused="EmailEntry_Completed"
                     Placeholder="Email" Keyboard="Email" Margin="10"/>
             </Frame>
             <Label x:Name="EmailLabel" Margin="15,0,0,0"/>
             <Frame Margin="5" Padding="-5"
                    BorderColor="LightGray" CornerRadius="15">
                 <Entry x:Name="LoginEntry" 
-                    Completed="LoginEntry_Completed"
+                    Unfocused="LoginEntry_Completed"
                     Placeholder="Login" Margin="10"/>
             </Frame>
+          
             <Label x:Name="LoginLabel" Margin="15,0,0,0"/>
+
             <Frame Margin="5" Padding="-5"
                    BorderColor="LightGray" CornerRadius="15">
-                <Entry x:Name="PhoneEntry" Completed="PhoneEntry_Completed"
+                <Entry x:Name="PasswordEntry" Unfocused="PasswordEntry_Completed"
+                      Placeholder="Password"  Margin="10"/>
+            </Frame>
+            <Label x:Name="PasswordLabel"  Margin="15,0,0,0"/>
+            <Frame Margin="5" Padding="-5"
+                   BorderColor="LightGray" CornerRadius="15">
+                <Entry x:Name="PhoneEntry" Unfocused="PhoneEntry_Completed"
                       Placeholder="PhoneNumber" Keyboard="Telephone" Margin="10"/>
             </Frame>
+            
             <Label x:Name="PhoneLabel" Margin="15,0,0,0"/>
-            <Button Text="Back" Margin="20,90,20,0" 
+            <Button Text="Registration" Margin="20,30,20,0" 
+                    Padding="10" BackgroundColor="#37b0ed"
+                    TextColor="White"
+                    CornerRadius="20"
+                    Clicked="RegBtnClick"
+                    />
+            <Button Text="Back" Margin="20,30,20,0" 
                     Padding="10" BackgroundColor="#37b0ed"
                     TextColor="White"
                     CornerRadius="20"

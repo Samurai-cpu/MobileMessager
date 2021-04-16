@@ -1,0 +1,12 @@
+C:\Users\volos\source\repos\CG\CG.Providers\bin\Debug\netstandard2.0\CG.Providers.deps.json
+C:\Users\volos\source\repos\CG\CG.Providers\bin\Debug\netstandard2.0\CG.Providers.dll
+C:\Users\volos\source\repos\CG\CG.Providers\bin\Debug\netstandard2.0\CG.Providers.pdb
+C:\Users\volos\source\repos\CG\CG.Providers\bin\Debug\netstandard2.0\CG.Dal.dll
+C:\Users\volos\source\repos\CG\CG.Providers\bin\Debug\netstandard2.0\CG.Dal.pdb
+C:\Users\volos\source\repos\CG\CG.Providers\obj\Debug\netstandard2.0\CG.Providers.csprojAssemblyReference.cache
+C:\Users\volos\source\repos\CG\CG.Providers\obj\Debug\netstandard2.0\CG.Providers.AssemblyInfoInputs.cache
+C:\Users\volos\source\repos\CG\CG.Providers\obj\Debug\netstandard2.0\CG.Providers.AssemblyInfo.cs
+C:\Users\volos\source\repos\CG\CG.Providers\obj\Debug\netstandard2.0\CG.Providers.csproj.CoreCompileInputs.cache
+C:\Users\volos\source\repos\CG\CG.Providers\obj\Debug\netstandard2.0\CG.Providers.csproj.CopyComplete
+C:\Users\volos\source\repos\CG\CG.Providers\obj\Debug\netstandard2.0\CG.Providers.dll
+C:\Users\volos\source\repos\CG\CG.Providers\obj\Debug\netstandard2.0\CG.Providers.pdb

@@ -1,12 +1,17 @@
-﻿using System;
+﻿using CG.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using CG.Services;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using CG.Models;
+using CG.Dal;
+using CG.Providers.Base;
 
 namespace CG
 {
@@ -66,6 +71,47 @@ namespace CG
             {
                 LoginLabel.Text = "Login is not Valid";
             }
+        }
+
+        private void PasswordEntry_Completed(object sender, EventArgs e)
+        {
+            string Password = "" + PasswordEntry.Text;
+            var PassPatern = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*?[#?!@$%^&*-+=]).{6,20}$";
+            if (Regex.IsMatch(Password, PassPatern))
+            {
+                PasswordLabel.Text = "Password is Valid";
+            }
+            else
+            {
+                PasswordLabel.Text = "Password is not Valid";
+            }
+        }
+
+        private async void  RegBtnClick(object sender, EventArgs e)
+        {
+            Dictionary<string, string> dict = new Dictionary<string, string>();
+            dict.Add("email", EmailEntry.Text);
+            dict.Add("userName", LoginEntry.Text);
+            dict.Add("password", PasswordEntry.Text);
+            dict.Add("phone", PhoneEntry.Text);
+            var auth = new AuthRequest();
+            var  result = await auth.MakeFormHttpRequestAsync<AuthResult>("Account/signup", dict);
+
+            User newUser = new User
+            {
+                AccessToken = result.AccessToken,
+                RefreshToken = result.RefreshToken,
+                UserName = result.UserName,
+                Password = LoginEntry.Text,
+                Email = EmailEntry.Text,
+                Phone = PhoneEntry.Text,
+            };
+            if (true)
+            {
+                ContextProvider.Database.SaveItem(newUser);
+            }
+            var users= ContextProvider.Database.GetItems();
+            users.ToList();
         }
     }
 }
