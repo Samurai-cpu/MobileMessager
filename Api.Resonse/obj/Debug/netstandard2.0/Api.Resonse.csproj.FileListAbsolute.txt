@@ -1,0 +1,9 @@
+C:\Users\volos\source\repos\CG\Api.Resonse\bin\Debug\netstandard2.0\Api.Resonse.deps.json
+C:\Users\volos\source\repos\CG\Api.Resonse\bin\Debug\netstandard2.0\Api.Resonse.dll
+C:\Users\volos\source\repos\CG\Api.Resonse\bin\Debug\netstandard2.0\Api.Resonse.pdb
+C:\Users\volos\source\repos\CG\Api.Resonse\obj\Debug\netstandard2.0\Api.Resonse.csprojAssemblyReference.cache
+C:\Users\volos\source\repos\CG\Api.Resonse\obj\Debug\netstandard2.0\Api.Resonse.AssemblyInfoInputs.cache
+C:\Users\volos\source\repos\CG\Api.Resonse\obj\Debug\netstandard2.0\Api.Resonse.AssemblyInfo.cs
+C:\Users\volos\source\repos\CG\Api.Resonse\obj\Debug\netstandard2.0\Api.Resonse.csproj.CoreCompileInputs.cache
+C:\Users\volos\source\repos\CG\Api.Resonse\obj\Debug\netstandard2.0\Api.Resonse.dll
+C:\Users\volos\source\repos\CG\Api.Resonse\obj\Debug\netstandard2.0\Api.Resonse.pdb

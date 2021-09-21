@@ -106,12 +106,12 @@ namespace CG
                 Email = EmailEntry.Text,
                 Phone = PhoneEntry.Text,
             };
-            if (true)
-            {
-                ContextProvider.Database.SaveItem(newUser);
-            }
-            var users= ContextProvider.Database.GetItems();
-            users.ToList();
+            
+            
+            ContextProvider.Database.SaveItem(newUser);
+            
+
+            await Navigation.PushAsync(new PhoneConfirmPage());
         }
     }
 }

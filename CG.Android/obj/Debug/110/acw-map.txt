@@ -1,3 +1,6 @@
+CG.Droid.CustomJobScheduler, CG.Android;com.companyname.cg.CustomJobScheduler
+CG.Droid.CustomJobScheduler;com.companyname.cg.CustomJobScheduler
+com.companyname.cg.CustomJobScheduler;com.companyname.cg.CustomJobScheduler
 CG.Droid.MainActivity, CG.Android;crc641671bd04fc7f623a.MainActivity
 CG.Droid.MainActivity;crc641671bd04fc7f623a.MainActivity
 cg.droid.MainActivity;crc641671bd04fc7f623a.MainActivity

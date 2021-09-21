@@ -32,3 +32,5 @@ C:\Users\volos\source\repos\CG\CG\bin\Debug\netstandard2.0\CG.Providers.pdb
 C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\Views\ProfileSettingsPage.xaml.g.cs
 C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\Views\TestPage1.xaml.g.cs
 C:\Users\volos\source\repos\CG\CG\obj\Debug\netstandard2.0\Views\TestPage2.xaml.g.cs
+C:\Users\volos\source\repos\CG\CG\bin\Debug\netstandard2.0\CG.Models.dll
+C:\Users\volos\source\repos\CG\CG\bin\Debug\netstandard2.0\CG.Models.pdb

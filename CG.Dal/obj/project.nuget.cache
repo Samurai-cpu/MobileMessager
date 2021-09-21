@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "lPphXRJrGG5qSsOEVnHdnzgzOZSsirPtz9CBbZNk3uFDtbCu9A2S3nZohVemMJ+sgtdzVL3MYI17ZwPvIA2ViA==",
+  "dgSpecHash": "HCCuVwSxgybpKzubeeWxyKHBtyWAQ/q7rykIv2kf7WfN8wePq0dBkJGmzBpWqHqlFlpcZEdz7duQw9pSIWJCVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\volos\\source\\repos\\CG\\CG.Dal\\CG.Dal.csproj",
   "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\volos\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\volos\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
     "C:\\Users\\volos\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",

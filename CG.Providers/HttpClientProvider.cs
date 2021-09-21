@@ -8,18 +8,22 @@ namespace CG.Providers
 {
     public class HttpClientProvider
     {
+        private static HttpClient httpClient;
+
+        public static HttpClient RenewAcessToken(string acessToken)
+        {
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", acessToken);
+            return httpClient;
+        }
+
         public static HttpClient GetHttpClient()
         {
-            var httpClient = new HttpClient();
-
-            httpClient.BaseAddress = new Uri(Config.ApiUrl);
-            var userProvider = new UserProvider("");
-
-            string savedToken = userProvider.GetItem().AccessToken;
-
-            if (!string.IsNullOrEmpty(savedToken))
-                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", savedToken);
-
+            if (httpClient == null)
+            {
+                httpClient = new HttpClient();
+                httpClient.BaseAddress = new Uri(Config.ApiUrl);
+            }
+            
             return httpClient;
         }
     }

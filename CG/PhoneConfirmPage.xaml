@@ -12,7 +12,7 @@
                 <Frame Margin="5" Padding="-5"
                    BorderColor="LightGray" CornerRadius="15">
                     <Entry x:Name="SMSEntry" Unfocused="SMSEntry_Unfocused"
-                    Placeholder="SMS Code" Keyboard="Numeric" Margin="10"/>
+                     Margin="10"/>
                 </Frame>
             </FlexLayout>
         </StackLayout>

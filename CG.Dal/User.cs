@@ -6,7 +6,7 @@ using SQLite;
 namespace CG.Dal
 {   
 
-    [Table("Usersi")]
+    [Table("Users")]
     public class User
     {
         [PrimaryKey, AutoIncrement, Column("_id")]

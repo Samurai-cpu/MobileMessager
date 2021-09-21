@@ -1,0 +1,8 @@
+C:\Users\volos\source\repos\CG\CG.Models\bin\Debug\netstandard2.0\CG.Models.deps.json
+C:\Users\volos\source\repos\CG\CG.Models\bin\Debug\netstandard2.0\CG.Models.dll
+C:\Users\volos\source\repos\CG\CG.Models\bin\Debug\netstandard2.0\CG.Models.pdb
+C:\Users\volos\source\repos\CG\CG.Models\obj\Debug\netstandard2.0\CG.Models.AssemblyInfoInputs.cache
+C:\Users\volos\source\repos\CG\CG.Models\obj\Debug\netstandard2.0\CG.Models.AssemblyInfo.cs
+C:\Users\volos\source\repos\CG\CG.Models\obj\Debug\netstandard2.0\CG.Models.csproj.CoreCompileInputs.cache
+C:\Users\volos\source\repos\CG\CG.Models\obj\Debug\netstandard2.0\CG.Models.dll
+C:\Users\volos\source\repos\CG\CG.Models\obj\Debug\netstandard2.0\CG.Models.pdb

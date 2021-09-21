@@ -1,0 +1,9 @@
+C:\Users\volos\source\repos\CG\Api.Request\bin\Debug\netstandard2.0\Api.Request.deps.json
+C:\Users\volos\source\repos\CG\Api.Request\bin\Debug\netstandard2.0\Api.Request.dll
+C:\Users\volos\source\repos\CG\Api.Request\bin\Debug\netstandard2.0\Api.Request.pdb
+C:\Users\volos\source\repos\CG\Api.Request\obj\Debug\netstandard2.0\Api.Request.csprojAssemblyReference.cache
+C:\Users\volos\source\repos\CG\Api.Request\obj\Debug\netstandard2.0\Api.Request.AssemblyInfoInputs.cache
+C:\Users\volos\source\repos\CG\Api.Request\obj\Debug\netstandard2.0\Api.Request.AssemblyInfo.cs
+C:\Users\volos\source\repos\CG\Api.Request\obj\Debug\netstandard2.0\Api.Request.csproj.CoreCompileInputs.cache
+C:\Users\volos\source\repos\CG\Api.Request\obj\Debug\netstandard2.0\Api.Request.dll
+C:\Users\volos\source\repos\CG\Api.Request\obj\Debug\netstandard2.0\Api.Request.pdb

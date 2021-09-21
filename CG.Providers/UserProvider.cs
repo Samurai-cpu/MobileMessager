@@ -1,18 +1,30 @@
 ﻿using CG.Dal;
+using CG.Providers.Base;
 using SQLite;
 using System;
 using System.Collections.Generic;
 
 namespace CG.Providers
 {
-    public interface IUserRepository
+    public class BaseProvider<T> where T:class
+    {
+        protected ContextProvider contextProvider;
+
+        public BaseProvider()
+        {
+            contextProvider = new ContextProvider();
+        }
+
+        //protected SQLiteConnection GetContextProvider() => new SQLiteConnection();
+    }
+    public interface IUserProvider
     {
          IEnumerable<User> GetItems();
     }
-    public class UserProvider:IUserRepository
+    public class UserProvider:BaseProvider<User> ,IUserProvider
     {
         SQLiteConnection database;
-        public UserProvider(string databasePath)
+        public UserProvider(string databasePath) : base()
         {
             database = new SQLiteConnection(databasePath);
             database.CreateTable<User>();
@@ -22,7 +34,10 @@ namespace CG.Providers
 
         public IEnumerable<User> GetItems()
         {
-            return database.Table<User>().ToList();
+           // using (var db = GetContextProvider())
+           // {
+                return database.Table<User>().ToList();
+           // }
         }
         public User GetItem(int id)
         {

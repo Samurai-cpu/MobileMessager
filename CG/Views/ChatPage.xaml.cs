@@ -13,9 +13,9 @@ namespace CG.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ChatPage : ContentPage
     {
-        private readonly IUserRepository userRepository;
+        private readonly IUserProvider userRepository;
 
-        public ChatPage(IUserRepository userRepository)
+        public ChatPage(IUserProvider userRepository)
         {
             InitializeComponent();
             this.userRepository = userRepository;

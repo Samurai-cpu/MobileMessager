@@ -3,6 +3,7 @@ using CG.Services;
 using CG.Views;
 using System;
 using System.IO;
+using System.Security.Cryptography;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,7 +16,7 @@ namespace CG
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage( new TestPage1());
+            MainPage = new NavigationPage(new PhoneConfirmPage());
         }
 
         protected override void OnStart()

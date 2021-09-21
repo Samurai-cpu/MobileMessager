@@ -10,6 +10,8 @@ namespace CG.Providers
         public static readonly string ApiUrl = "https://loveproj.fun/";
         public static readonly string AuthUserInfoUrl = "Account/getauthuserinfo";
         public static readonly string UpdateRefreshTokenUrl = "Account/longsessionupdate";
+        public static readonly string CreateFirstSessionUrl = "MessangerSession/createfirstsession";
+        public static readonly string CreateSessionUrl = "MessangerSession/createsession";
         public Config()
         {
             // var assembly = typeof(Config).GetTypeInfo().Assembly;

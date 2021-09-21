@@ -6,6 +6,9 @@ using Android.Runtime;
 using Android.OS;
 using Android.Views;
 using CG.Services;
+using Android.App.Job;
+using CG.Providers.Base;
+using Android.Widget;
 
 namespace CG.Droid
 {
@@ -18,7 +21,23 @@ namespace CG.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
-            var jobBuilder = this.CreateJobBuilderUsingJobId<JobScheduler>(1488);
+    /*
+            var job = this.CreateJobBuilderUsingJobId<CustomJobScheduler>(1)
+                .SetPeriodic(1000)
+                .Build();
+
+            var jobScheduler = (JobScheduler)GetSystemService(JobSchedulerService);
+            var jobResult = jobScheduler.Schedule(job);
+                
+            if (JobScheduler.ResultSuccess == jobResult)
+            {
+
+            }
+            else
+            {
+               
+            }  
+      */  
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
